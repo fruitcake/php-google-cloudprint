@@ -1,0 +1,40 @@
+{
+  "name": "fruitcakestudio/google-cloudprint",
+  "description": "Laravel Google Cloudprint Package",
+  "keywords": [
+    "laravel",
+    "cloudprint",
+    "google"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Thijs Dalmaijer",
+      "email": "thijs@fruitcake.nl"
+    }
+  ],
+  "require": {
+    "php": ">=7",
+    "illuminate/support": "^5.5,<5.8",
+    "illuminate/console": "^5.5,<5.8",
+    "illuminate/filesystem": "^5.5,<5.8",
+    "google/apiclient": "^2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "FruitcakeStudio\\GoogleCloudPrint\\": "src/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0.1-dev"
+    },
+    "laravel": {
+      "providers": [
+        "FruitcakeStudio\\GoogleCloudPrint\\CloudPrintServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
