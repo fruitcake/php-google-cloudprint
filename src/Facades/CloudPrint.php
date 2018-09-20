@@ -8,6 +8,6 @@ class CloudPrint extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'cloudprint';
+        return 'CloudPrint';
     }
 }

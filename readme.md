@@ -1,4 +1,4 @@
-## Google Cloudprint Wrapper for Laravel 5
+# Google Cloudprint Wrapper for Laravel 5
 
 ## Installation
 ### Laravel

@@ -16,7 +16,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
         $this->publishes([$configPath => config_path('cloudprint.php')], 'config');
 
 
-        $this->app->singleton('cloudprint', function ($app) {
+        $this->app->singleton('CloudPrint', function ($app) {
             $manager = $app->make(CloudPrint::class);
             return $manager;
         });
