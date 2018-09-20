@@ -4,7 +4,8 @@
   "keywords": [
     "laravel",
     "cloudprint",
-    "google"
+    "google",
+    "fruitcake"
   ],
   "license": "MIT",
   "authors": [
@@ -16,7 +17,6 @@
   "require": {
     "php": ">=7",
     "illuminate/support": "^5.5,<5.8",
-    "illuminate/console": "^5.5,<5.8",
     "illuminate/filesystem": "^5.5,<5.8",
     "google/apiclient": "^2.0"
   },
@@ -31,7 +31,7 @@
     },
     "laravel": {
       "providers": [
-        "FruitcakeStudio\\GoogleCloudPrint\\CloudPrintServiceProvider"
+        "FruitcakeStudio\\GoogleCloudPrint\\ServiceProvider"
       ]
     }
   },

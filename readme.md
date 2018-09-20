@@ -1,4 +1,4 @@
-## Google Cloudprint Wrapper for Laravel 5
+_## Google Cloudprint Wrapper for Laravel 5
 
 ## Installation
 ### Laravel
@@ -8,7 +8,7 @@ This package can be installed trough **Composer**.
 composer require fruitcakestudio/google-cloudprint:"^0.1"
 ```
 
-After updating composer, add the ServiceProvider to the providers array in config/app.php
+If you're using Laravel <5.5 then you need to add the ServiceProvider to the providers array in config/app.php
 ```sh
 'FruitcakeStudio\GoogleCloudPrint\ServiceProvider',
 ```
@@ -55,7 +55,7 @@ CloudPrint::acceptPrinter('xxxx-xxxx-xxxx-xxxx');
 ### Printing a stored file
 You can print a stored file trough the following method
 ```php
-CloudPrint::printStoredFile('Print job name','file.pdf')
+CloudPrint::printStoredFile('Job Title','file.pdf')
 ```
 This calls `Storage::get('file.pdf')` in the background, so make sure your file is in the Storage driver. Optionally you can give a printerId as the third parameter.
 
@@ -65,4 +65,4 @@ If you want to handle your own file loading, or print a file that is in memory y
 CloudPrint::printFile('Job Title', $content, $mimeType)
 ``` 
 
-Again you can optionally specify a printerId as the fourth parameter.
+Again you can optionally specify a printerId as the fourth parameter._

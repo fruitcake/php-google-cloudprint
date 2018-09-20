@@ -2,9 +2,7 @@
 
 namespace FruitcakeStudio\GoogleCloudPrint;
 
-use Illuminate\Support\ServiceProvider;
-
-class CloudPrintServiceProvider extends ServiceProvider
+class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {
     /**
      * Register the service provider.
@@ -19,13 +17,8 @@ class CloudPrintServiceProvider extends ServiceProvider
 
 
         $this->app->singleton('cloudprint', function ($app) {
-            $manager = $app->make('FruitcakeStudio\GoogleCloudPrint\CloudPrint');
+            $manager = $app->make(CloudPrint::class);
             return $manager;
         });
-    }
-
-    public function boot()
-    {
-
     }
 }
